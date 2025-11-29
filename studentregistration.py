@@ -1,18 +1,16 @@
 import registrationfunction
 def main():
      while True:
-        c=registrationfunction.creat_menu()
-        if c==1:
+        choice=registrationfunction.create_menu()
+        if choice==1:
              registrationfunction.registration()
-        elif c==2:
+        elif choice==2:
              registrationfunction.search_student()
-        elif c==3:
+        elif choice==3:
              registrationfunction.delete_studentdata()
-        elif c==4:
+        elif choice==4:
              registrationfunction.showall_data()
-        elif c==5:
+        elif choice==5:
              print("thank you!")
              exit(0)
-        else:
-             print("invalide choice!")
-main()
+main()    
